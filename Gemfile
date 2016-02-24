@@ -44,3 +44,30 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'bootstrap-sass'
+gem 'devise'
+gem 'high_voltage'
+gem 'rails_admin'
+gem 'simple_form'
+gem 'therubyracer', :platform=>:ruby
+gem 'thin'
+
+group :development do
+  gem 'better_errors'
+  gem 'hub', :require=>nil
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-rescue'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
